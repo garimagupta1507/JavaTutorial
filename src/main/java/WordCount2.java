@@ -14,7 +14,7 @@ public class WordCount2 {
             while((line = bufferedReader.readLine()) != null) {
                 String line2 = line.toUpperCase();
                 String[] words = line2.split(" ");
-                for(int i = 0; i<words.length; i++){
+                for(int i = 0; i < words.length; i++){
                     //System.out.println(words[i]);
                     if(counter.containsKey(words[i])){
                         counter.put(words[i], counter.get(words[i]) + 1);

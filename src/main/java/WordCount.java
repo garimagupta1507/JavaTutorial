@@ -14,7 +14,7 @@ public class WordCount {
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             while((line = bufferedReader.readLine()) != null) {
                 String[] words = line.split(" ");
-                for(int i = 0; i<words.length; i++){
+                for(int i = 0; i < words.length; i++){
                     if(counter.containsKey(words[i])){
                         counter.put(words[i], counter.get(words[i]) + 1);
                     } else {
