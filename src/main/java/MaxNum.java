@@ -8,7 +8,7 @@ public class MaxNum {
         try {
             FileReader fileReader = new FileReader("src/main/resources/sample_numcsv.csv");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
-            int max = 0;
+            int max = Integer.MIN_VALUE;
             while((line = bufferedReader.readLine()) != null) {
                 String[] nums = line.split(",");
                 Integer[] intNum = new Integer[nums.length];
