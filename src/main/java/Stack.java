@@ -1,5 +1,9 @@
 public class Stack {
-    ListNode head;
+    ListNode head ;
+
+    public Stack(){
+        head = null;
+    }
 
     public void push(int element){
         ListNode tmp = new ListNode();
@@ -9,6 +13,9 @@ public class Stack {
     }
 
     public int pop(){
+        if(head == null){
+            return -1;
+        }
         int tmpVal;
         tmpVal = head.val;
         head = head.next;
